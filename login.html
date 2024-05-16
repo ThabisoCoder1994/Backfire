@@ -1,0 +1,146 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title>Login Page</title>  
+<style>   
+body {  
+    font-family: Calibri, Helvetica, sans-serif;  
+    background-color: rgb(228, 228, 228);  
+    margin: 200;
+    padding: 0;
+}
+
+.container {
+    background-color: rgb(245, 0, 0);
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 200px; /* Adjusted max-width */
+    margin: 0 auto; /* Centering the container */
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input[type=text], input[type=password] {   
+    width: calc(100% - 30px);
+    margin-bottom: 16px;
+    padding: 10px; /* Adjusted padding */
+    border: 2px solid rgb(128, 0, 0);   
+    border-radius: 5px;
+    box-sizing: border-box;   
+}  
+
+button {   
+    background-color: rgb(0, 0, 0);   
+    width: 100%;  
+    color: rgb(238, 238, 238);   
+    padding: 12px; /* Adjusted padding */
+    margin-bottom: 10px;   
+    border: none;   
+    cursor: pointer;   
+    border-radius: 5px;
+}
+
+button:hover {   
+    opacity: 0.7;   
+}   
+
+.cancelbtn {   
+    width: auto;   
+    padding: 10px 18px;  
+    margin: 10px 5px;  
+}   
+/* Center aligning text */
+.center {
+    text-align: center;
+}
+
+/* Header styles */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+}
+</style>
+ <!-- slider stylesheet -->
+ <link rel="stylesheet" type="text/css"
+ href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+<!-- bootstrap core css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+<!-- fonts style -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:400,500&display=swap"
+ rel="stylesheet" />
+<!-- Custom styles for this template -->
+<link href="css/style.css" rel="stylesheet" />
+<!-- responsive style -->
+<link href="css/responsive.css" rel="stylesheet" />   
+</head>    
+<!-- header section strats -->
+<header class="header_section">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand" href="#">
+          <div class="logo_box">
+            <h1>BACKFIRE 031</h1>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mr-2">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Our Success story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login </a>
+            </li>
+          </ul> 
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- end header section -->
+<body class="center">    
+    <div class="center">
+        <h1>Login Form</h1>
+        <form>  
+            <div class="container">   
+                <label>Username:</label> <!-- Adjusted label spacing -->
+                <input type="text" placeholder="Enter Username" name="username" required>  
+                <label>Password:</label> <!-- Adjusted label spacing -->
+                <input type="password" placeholder="Enter Password" name="password" required>  
+                <button type="submit">Login</button>   
+                <input type="checkbox" checked="checked"> Remember me   
+                <button type="button" class="cancelbtn">Cancel</button>   
+                Forgot <a href="#">password?</a>   
+            </div>   
+        </form> 
+    </div>    
+</body>     
+</html>
+
